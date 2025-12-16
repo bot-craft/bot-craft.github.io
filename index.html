@@ -1,1 +1,194 @@
-<h1>Hola Mundo, soy Bot-Craft</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bot-Craft - Taskyto Chatbot Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="https://github.com/bot-craft/bot-craft-code" target="_blank" class="brand-container">
+                <div class="logo">Bot-Craft</div>
+                <div class="github-link" aria-label="GitHub Repository">
+                    <svg height="24" width="24" viewBox="0 0 16 16" fill="currentColor">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </div>
+            </a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#platform">Platform</a>
+                <a href="#demo">Demo</a>
+                <a href="#deploy">Deploy</a>
+            </div>
+            <a href="http://miso.ii.uam.es:9000" class="cta-button" target="_blank">Launch App</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Build Intelligent Chatbots with Taskyto</h1>
+            <p>A web platform designed to facilitate the development and deployment of task-oriented chatbots using the Taskyto domain-specific language. Featuring an AI-powered assistant to accelerate your workflow.</p>
+            <div class="hero-buttons">
+                <a href="http://miso.ii.uam.es:9000" class="btn btn-primary" target="_blank">Try Bot-Craft Now</a>
+                <a href="#deploy" class="btn btn-secondary">Get Started</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">What is Bot-Craft?</h2>
+            <div class="section-subtitle">
+                <p>Conversational agents are gaining prominence as a way to interact with software systems. While Taskyto facilitates chatbot construction with a domain-specific language, it can still be complex for non-experts.</p>
+                <br>
+                <p><strong>Bot-Craft</strong> solves this by providing a web platform that enables chatbot development using Taskyto and the deployment of the generated chatbots. It features an <strong>intelligent assistant</strong> capable of producing Taskyto code from natural language, significantly accelerating the development cycle.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <h2 class="section-title">Taskyto Framework</h2>
+            <p class="section-subtitle">Taskyto simplifies development by replacing manual intent definition with a modular YAML specification. It combines the smart conversational flow of LLMs with the reliability of intent-based systems.</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Menu Module</h3>
+                    <p>Acts as a router, presenting the user with conversational choices. Each choice can lead to another module, a sequence, or a direct answer. Typically used as the main entry point.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Sequence Module</h3>
+                    <p>Defines a fixed chain of conversation steps. Essential for guiding the user through multi-step processes like order checkouts, ensuring modules execute in the correct order.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Question Answering</h3>
+                    <p>Holds a list of predefined question-answer pairs. Uses an LLM to semantically match user queries to the most appropriate question without needing multiple training phrases.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Data Gathering</h3>
+                    <p>Collects specific information (e.g., name, pizza size) from the user. Supports various data types including enums and soft types like "Person name".</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Action Module</h3>
+                    <p>Executes custom Python code using data collected from preceding modules. Useful for performing final actions like calculating prices or processing orders.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="platform">
+            <h2 class="section-title">The Platform</h2>
+            
+            <div class="showcase">
+                <div class="showcase-content">
+                    <h3>Project Management</h3>
+                    <p>Manage your chatbot projects from a single control panel. Create new chatbots, rename them, or delete existing ones with ease. A secure login system ensures every developer has their own private workspace.</p>
+                </div>
+                <div class="showcase-image">
+                    <img src="readme_files/ProjectList.png" alt="Project List Interface">
+                </div>
+            </div>
+
+            <div class="showcase">
+                <div class="showcase-content">
+                    <h3>Online Code Editor</h3>
+                    <p>A powerful workspace for creating and editing YAML configuration files. Features syntax highlighting, a file explorer, and real-time error checking. It offers a familiar development environment for both novice and expert developers.</p>
+                </div>
+                <div class="showcase-image">
+                    <img src="readme_files/CodeEditor.png" alt="Code Editor Interface">
+                </div>
+            </div>
+
+            <div class="showcase">
+                <div class="showcase-content">
+                    <h3>Intelligent Assistant</h3>
+                    <p>An AI-powered helper integrated into the editor. Ask questions in natural language to get answers about syntax, suggest code snippets, or generate entire YAML modules. It's like having an expert partner by your side.</p>
+                </div>
+                <div class="showcase-image">
+                    <!-- Using CodeEditor image again if specific assistant image isn't available, or description implies it's part of editor -->
+                    <!-- The user mentioned Figure 19/20 in text but didn't provide them specifically, but CodeEditor.png likely shows it -->
+                    <img src="readme_files/CodeEditor.png" alt="Intelligent Assistant">
+                </div>
+            </div>
+
+            <div class="showcase">
+                <div class="showcase-content">
+                    <h3>Interactive Chat</h3>
+                    <p>Test your chatbot instantly with a chat interface that feels like ChatGPT. Fix problems right away and iterate quickly by switching between coding and testing.</p>
+                </div>
+                <div class="showcase-image">
+                    <img src="readme_files/interactiveChat.png" alt="Interactive Chat Interface">
+                </div>
+            </div>
+        </section>
+
+        <section id="demo">
+            <h2 class="section-title">See it in Action</h2>
+            
+            <div class="video-container">
+                <h3>Platform Walkthrough</h3>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">A complete tour of the Bot-Craft platform.</p>
+                <video controls>
+                    <source src="readme_files/bot-craft_demo.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="video-container">
+                <h3>Automated Code Integration</h3>
+                <p style="text-align: center; color: var(--text-muted); margin-bottom: 1rem;">Demonstration of the AI assistant's code generation capabilities.</p>
+                <video controls>
+                    <source src="readme_files/bot-craft_new_feature.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section id="deploy">
+            <h2 class="section-title">Deployment & Installation</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                
+                <div class="feature-card" style="margin-bottom: 2rem;">
+                    <h3>Requirements</h3>
+                    <ul style="list-style-position: inside; color: var(--text-muted); margin-top: 1rem;">
+                        <li><strong>Docker</strong>: Installed on your machine.</li>
+                        <li><strong>OpenAI API Key</strong>: Required for the `gpt-4o-mini` model.</li>
+                    </ul>
+                </div>
+
+                <h3>1. Clone the Repository</h3>
+                <pre><code>git clone --recurse-submodules git@github.com:bot-craft/bot-craft-code.git
+cd bot-craft-code</code></pre>
+
+                <h3>2. Setup Submodules</h3>
+                <pre><code>cd chatbot-llm
+git checkout bot-craft-integration
+cd ..</code></pre>
+
+                <h3>3. Configuration</h3>
+                <p style="color: var(--text-muted); margin-bottom: 1rem;">Create a <code>.env</code> file in the root folder:</p>
+                <pre><code>echo "REACT_APP_IP_ADDRESS = \"localhost\"" > .env</code></pre>
+
+                <h3>4. Run with Docker</h3>
+                <pre><code>docker compose up -d</code></pre>
+
+                <h3>5. Access</h3>
+                <p style="color: var(--text-muted);">Open your browser and navigate to:</p>
+                <a href="http://localhost:9000" style="color: var(--primary-color); font-weight: bold;">http://localhost:9000</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Bot-Craft. All rights reserved.</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            <a href="https://github.com/bot-craft/bot-craft-code" target="_blank">View on GitHub</a>
+        </p>
+    </footer>
+
+</body>
+</html>
